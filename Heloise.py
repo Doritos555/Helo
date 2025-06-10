@@ -32,10 +32,8 @@ def menu():
 
     if opcao == "Mulher mais linda do mundo":
         if st.sidebar.button("Executar"):
-            caminho_imagem = r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\Fofa.jpeg"
 
-            imagem = Image.open(r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\Fofa.jpeg")
-            st.image(imagem, caption="A mulher mais linda do mundo 💖")
+            st.image("Fofa.jpeg", caption="A mulher mais linda do mundo 💖")
 
     elif opcao == "Cantada misteriosa":
         if st.sidebar.button("Executar"):
@@ -52,11 +50,11 @@ def menu():
     elif opcao == "Presente misterioso":
         if st.sidebar.button("Executar"):
             imagens_presentes = [
-                r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\presente1.png",
-                r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\presente2.png",
-                r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\presente3.png",
-                r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\presente4.png",
-                r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\presente5.png"
+                r"presente1.png",
+                r"presente2.png",
+                r"presente3.png",
+                r"presente4.png",
+                r"presente5.png"
             ]
             imagem_escolhida = random.choice(imagens_presentes)
 
@@ -76,9 +74,7 @@ def menu():
 
     elif opcao == "Segredo":
         if st.sidebar.button("Executar"):
-            caminho_imagem = r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\te amo.jpg"
-            imagem = Image.open(r"C:\Users\marty\OneDrive\Documentos\MatTec\Heloise\te amo.jpg")
-            st.image(imagem, caption="Te amo 💖")
+            st.image("te amo.jpg", caption="Te amo 💖")
 
 
 
